@@ -2,6 +2,9 @@ from flask import Flask, render_template, request, redirect
 
 app = Flask(__name__)
 
+app.vars={}
+
+
 @app.route('/')
 def main():
   return redirect('/index')
@@ -9,6 +12,23 @@ def main():
 @app.route('/index')
 def index():
   return render_template('index.html')
+
+
+
+# Custom functions:
+
+@app.route('/gettext', methods=['GET','POST'])
+def gettext():
+    if request.method == 'POST':
+       text = request.form['text']
+       f = open('text.txt', 'w')
+       f.write(text)
+       f.close()
+
+
+
+
+
 
 if __name__ == '__main__':
   app.run(port=33507)
