@@ -9,6 +9,13 @@
 	<body>
 		<div>
   			<h1>Being insulting?</h1>
+                        <form action = "/getdelay" method="POST">
+                            <p> Select Origin:<input name="origin" type ="text" value="JFK" /> </p>
+                            <p> Select Destination: <input name="dest" type ="text" value="LAX" /> </p>
+    			    <p> Select Airline : <input name="unique_carrier" type="text" value="AA"></p>
+    			    <p> Select Date:<input name="day_of_week" type ="text" value="1" /> </p>
+    			    <p> <input type ="submit" value="Check Delay" /> </p>
+			</form>
 		</div>
 	</body>
 </html>
