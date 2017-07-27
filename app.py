@@ -24,7 +24,7 @@ def gettext():
        f = open('text.txt', 'w')
        f.write(text)
        f.close()
-
+    return 1
 
 
 
