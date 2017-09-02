@@ -17,13 +17,14 @@ def index():
 
 # Custom functions:
 
-@app.route('/gettext', methods=['GET','POST'])
+@app.route('/gettext', methods=['POST'])
 def gettext():
     if request.method == 'POST':
-       text = request.form['text']
-       f = open('text.txt', 'w')
-       f.write(text)
-       f.close()
+        #text = request.form['text']
+        #f = open('text.txt', 'w')
+        #f.write(text)
+        #f.close()
+	return "ciao"
     return 1
 
 
