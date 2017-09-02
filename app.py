@@ -24,7 +24,7 @@ def gettext():
         #f = open('text.txt', 'w')
         #f.write(text)
         #f.close()
-	return "ciao"
+	return request.form['text']
     return 1
 
 
