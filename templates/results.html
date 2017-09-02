@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Being insulting?</title>
+	<link rel="stylesheet" href="{{ url_for('static',
+		filename='style_lulu.css') }}">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<h2>Your text:</h2>
+
+	<div>{{ content }}</div><br />
+	
+	<h2>Prediction:</h2>
+	
+	<div> <strong>{{ prediction }}</strong>
+			(probability: {{ probability }}%). <br />
+	</div>
+	
+	<br />
+
+	<div id='button'>
+		<form action="/thanks" method="post">
+			<h2>Did you mean it as insulting?</h2>
+			<input type=submit value='yes' name='feedback_button'>
+			<input type=submit value='no' name='feedback_button'>
+			<br /><br />
+
+			<input type=hidden value='{{ prediction }}' name='prediction'>
+			<input type=hidden value='{{ content }}' name='review'>
+		</form>
+	</div>
+
+<br />
+	<div id='button'>
+		<form action="/">
+			<input type=submit value='Check an other text'>
+		</form>
+	</div>
+</body>
+
+</html>
