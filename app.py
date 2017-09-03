@@ -139,7 +139,8 @@ def clean_sentences(text, do_not_lemm, STOPWORDS):
 
 def model(text):
    do_not_lemm = ['ass', 'fucking'] # list all words that you do not want to lemmatize
-   STOPWORDS = set(stopwords.words("english"))
+#  STOPWORDS = set(stopwords.words("english"))
+   STOPWORDS = dill.load(open('STOPWORDS.dill', 'r'))
    tfidf_transformer = dill.load(open('tfidf_transformer.dill', 'r'))
    tfidf_transformer = dill.load(open('tfidf_transformer_fit.dill', 'r'))
    clf = dill.load(open('clf.dill', 'r'))
