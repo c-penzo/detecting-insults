@@ -3,20 +3,20 @@ from flask import Flask, render_template, request, redirect
 import pandas as pd
 from bs4 import BeautifulSoup
 import re
-import string
+#import string
 #from spacy.en import STOPWORDS <-- gives error
-from nltk.corpus import stopwords
-from sklearn.feature_extraction.text import CountVectorizer
-import numpy as np
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.feature_extraction.text import TfidfTransformer
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.naive_bayes import MultinomialNB
-from spacy.en import English
-from sklearn import svm
-from sklearn import linear_model
-from sklearn.ensemble import AdaBoostClassifier
-from string import punctuation
+#from nltk.corpus import stopwords
+#from sklearn.feature_extraction.text import CountVectorizer
+#import numpy as np
+#from sklearn.ensemble import RandomForestClassifier
+#from sklearn.feature_extraction.text import TfidfTransformer
+#from sklearn.feature_extraction.text import TfidfVectorizer
+#from sklearn.naive_bayes import MultinomialNB
+#from spacy.en import English
+#from sklearn import svm
+#from sklearn import linear_model
+#from sklearn.ensemble import AdaBoostClassifier
+#from string import punctuation
 import dill
 
 
