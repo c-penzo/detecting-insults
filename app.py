@@ -32,7 +32,7 @@ def remove_human_names(text):
 
 def remove_punct_unless_aphostrophe(text):
     # print punctuation.replace("'", '') --> !"#$%&()*+,-./:;<=>?@\[\\\]^_`{|}~
-    puncts = punctuation.replace("'", '')
+    #puncts = punctuation.replace("'", '')
     return ' '.join(re.split(r'[!"#$%&()*+,-./:;<=>?@\[\\\]^_`{|}~]+', text))
 
 
