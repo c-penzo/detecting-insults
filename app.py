@@ -174,8 +174,20 @@ def gettext():
         #f.write(text)
         #f.close()
         text = request.form['text']
+
+        do_not_lemm = ['ass', 'fucking'] # list all words that you do not want to lemmatize
+        #  STOPWORDS = set(stopwords.words("english"))
+        STOPWORDS = dill.load(open('STOPWORDS.dill', 'r'))
+        tfidf_transformer = dill.load(open('tfidf_transformer.dill', 'r'))
+        tfidf_transformer = dill.load(open('tfidf_transformer_fit.dill', 'r'))
+        clf = dill.load(open('clf.dill', 'r'))
+        cleaned_test_s = clean_sentences(text, do_not_lemm, STOPWORDS)
+        test_s_tfidf = tfidf_transformer.transform(pd.Series(cleaned_test_s))
+        predicted = clf.predict(test_s_tfidf)
+        yesno = predicted[0]
+
 	#yesno = model(text)[0]
-        yesno = 1
+        #yesno = 1
         if yesno==0:
            pred='non insulting!'
         else:
