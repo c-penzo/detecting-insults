@@ -1,0 +1,101 @@
+2017-09-05T11:06:02.069721+00:00 app[web.1]: [2017-09-05 11:06:02 +0000] [4] [INFO] Shutting down: Master
+2017-09-05T11:06:02.180937+00:00 heroku[web.1]: Process exited with status 0
+2017-09-05T11:30:09.097164+00:00 heroku[web.1]: Unidling
+2017-09-05T11:30:09.097470+00:00 heroku[web.1]: State changed from down to starting
+2017-09-05T11:30:17.097398+00:00 heroku[web.1]: Starting process with command `gunicorn app:app`
+2017-09-05T11:30:20.272630+00:00 app[web.1]: [2017-09-05 11:30:20 +0000] [4] [INFO] Starting gunicorn 19.3.0
+2017-09-05T11:30:20.273216+00:00 app[web.1]: [2017-09-05 11:30:20 +0000] [4] [INFO] Listening at: http://0.0.0.0:18583 (4)
+2017-09-05T11:30:20.277472+00:00 app[web.1]: [2017-09-05 11:30:20 +0000] [4] [INFO] Using worker: sync
+2017-09-05T11:30:20.283359+00:00 app[web.1]: [2017-09-05 11:30:20 +0000] [10] [INFO] Booting worker with pid: 10
+2017-09-05T11:30:20.340681+00:00 app[web.1]: [2017-09-05 11:30:20 +0000] [11] [INFO] Booting worker with pid: 11
+2017-09-05T11:30:20.796183+00:00 heroku[web.1]: State changed from starting to up
+2017-09-05T11:30:24.344088+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=detecting-insults.herokuapp.com request_id=6c1f1340-a6c9-41b4-bc6e-9b8a988301e8 fwd="195.132.195.26" dyno=web.1 connect=0ms service=3154ms status=404 bytes=386 protocol=http
+2017-09-05T12:05:56.675174+00:00 heroku[web.1]: Idling
+2017-09-05T12:05:56.675841+00:00 heroku[web.1]: State changed from up to down
+2017-09-05T12:05:57.466284+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2017-09-05T12:05:57.482120+00:00 app[web.1]: [2017-09-05 12:05:57 +0000] [11] [INFO] Worker exiting (pid: 11)
+2017-09-05T12:05:57.482381+00:00 app[web.1]: [2017-09-05 12:05:57 +0000] [10] [INFO] Worker exiting (pid: 10)
+2017-09-05T12:05:57.615193+00:00 app[web.1]: [2017-09-05 12:05:57 +0000] [4] [INFO] Handling signal: term
+2017-09-05T12:05:57.707584+00:00 app[web.1]: [2017-09-05 12:05:57 +0000] [4] [INFO] Shutting down: Master
+2017-09-05T12:05:57.812928+00:00 heroku[web.1]: Process exited with status 0
+2017-09-06T07:47:33.000000+00:00 app[api]: Build started by user penzo.camilla@gmail.com
+2017-09-06T07:47:59.060422+00:00 app[api]: Deploy 3ef46e6f by user penzo.camilla@gmail.com
+2017-09-06T07:47:59.060422+00:00 app[api]: Release v27 created by user penzo.camilla@gmail.com
+2017-09-06T07:47:59.457248+00:00 heroku[web.1]: State changed from down to starting
+2017-09-06T07:47:33.000000+00:00 app[api]: Build succeeded
+2017-09-06T07:48:06.931464+00:00 heroku[web.1]: Starting process with command `gunicorn app:app`
+2017-09-06T07:48:09.510604+00:00 app[web.1]: [2017-09-06 07:48:09 +0000] [4] [INFO] Starting gunicorn 19.3.0
+2017-09-06T07:48:09.511337+00:00 app[web.1]: [2017-09-06 07:48:09 +0000] [4] [INFO] Listening at: http://0.0.0.0:10271 (4)
+2017-09-06T07:48:09.511504+00:00 app[web.1]: [2017-09-06 07:48:09 +0000] [4] [INFO] Using worker: sync
+2017-09-06T07:48:09.516731+00:00 app[web.1]: [2017-09-06 07:48:09 +0000] [10] [INFO] Booting worker with pid: 10
+2017-09-06T07:48:09.583894+00:00 app[web.1]: [2017-09-06 07:48:09 +0000] [11] [INFO] Booting worker with pid: 11
+2017-09-06T07:48:10.639009+00:00 heroku[web.1]: State changed from starting to up
+2017-09-06T07:48:25.821317+00:00 heroku[router]: at=info method=GET path="/index" host=detecting-insults.herokuapp.com request_id=10b755c5-d81c-41eb-90c0-3f686899dd19 fwd="195.132.195.26" dyno=web.1 connect=0ms service=16ms status=200 bytes=769 protocol=http
+2017-09-06T07:48:25.999641+00:00 heroku[router]: at=info method=GET path="/static/style_lulu.css" host=detecting-insults.herokuapp.com request_id=c1b03db8-999a-487b-8c9c-f8e8e4dabbc5 fwd="195.132.195.26" dyno=web.1 connect=0ms service=21ms status=200 bytes=1268 protocol=http
+2017-09-06T07:48:28.992973+00:00 heroku[router]: at=info method=GET path="/index" host=detecting-insults.herokuapp.com request_id=2a9d8d1f-6603-43ca-bef8-2664a6c8ede5 fwd="195.132.195.26" dyno=web.1 connect=0ms service=6ms status=200 bytes=769 protocol=http
+2017-09-06T07:48:33.100185+00:00 heroku[router]: at=info method=POST path="/gettext" host=detecting-insults.herokuapp.com request_id=3165a6fb-b59b-480b-90cc-35f16d290d52 fwd="195.132.195.26" dyno=web.1 connect=0ms service=25ms status=500 bytes=456 protocol=http
+2017-09-06T07:48:39.888857+00:00 heroku[router]: at=info method=GET path="/index" host=detecting-insults.herokuapp.com request_id=388965d0-ea14-4616-b798-a57a1e318c02 fwd="195.132.195.26" dyno=web.1 connect=0ms service=2ms status=200 bytes=769 protocol=http
+2017-09-06T07:48:39.791684+00:00 heroku[router]: at=info method=GET path="/" host=detecting-insults.herokuapp.com request_id=c7b8801c-f4d2-43c5-be84-d0a7396b07de fwd="195.132.195.26" dyno=web.1 connect=1ms service=9ms status=302 bytes=439 protocol=https
+2017-09-06T07:48:44.725848+00:00 heroku[router]: at=info method=POST path="/gettext" host=detecting-insults.herokuapp.com request_id=5c47842b-2465-4554-8314-7aff90fd9bf8 fwd="195.132.195.26" dyno=web.1 connect=0ms service=11ms status=500 bytes=456 protocol=http
+2017-09-06T07:58:37.823180+00:00 heroku[router]: at=info method=GET path="/" host=detecting-insults.herokuapp.com request_id=2c0d942f-f41f-4bd6-8fc0-8b0a197166d0 fwd="195.132.195.26" dyno=web.1 connect=0ms service=5ms status=302 bytes=439 protocol=https
+2017-09-06T07:58:38.009706+00:00 heroku[router]: at=info method=GET path="/index" host=detecting-insults.herokuapp.com request_id=cafbe302-5395-4592-b68e-9d976bd8b629 fwd="195.132.195.26" dyno=web.1 connect=0ms service=2ms status=200 bytes=769 protocol=http
+2017-09-06T07:58:44.678463+00:00 heroku[router]: at=info method=POST path="/gettext" host=detecting-insults.herokuapp.com request_id=5b517b9e-b895-4ff3-82df-3f0eaff94c59 fwd="195.132.195.26" dyno=web.1 connect=1ms service=16ms status=500 bytes=456 protocol=http
+2017-09-06T08:16:03.242318+00:00 heroku[router]: at=info method=GET path="/" host=detecting-insults.herokuapp.com request_id=370b116b-fa03-4743-be8a-ae74745aa8d1 fwd="195.132.195.26" dyno=web.1 connect=0ms service=4ms status=302 bytes=439 protocol=https
+2017-09-06T08:16:03.337337+00:00 heroku[router]: at=info method=GET path="/index" host=detecting-insults.herokuapp.com request_id=3ef9d6da-001d-41a7-9a30-e03d890a29aa fwd="195.132.195.26" dyno=web.1 connect=0ms service=2ms status=200 bytes=769 protocol=http
+2017-09-06T08:16:11.775828+00:00 heroku[router]: at=info method=GET path="/index" host=detecting-insults.herokuapp.com request_id=36198ac3-7134-4e75-93ee-69c727a2ac7e fwd="54.89.92.4" dyno=web.1 connect=1ms service=2ms status=200 bytes=769 protocol=http
+2017-09-06T08:16:11.814277+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=detecting-insults.herokuapp.com request_id=8a53ff61-cf81-4587-9633-3bb44d66b48a fwd="54.174.33.17" dyno=web.1 connect=0ms service=2ms status=404 bytes=386 protocol=http
+2017-09-06T08:16:39.950500+00:00 heroku[router]: at=info method=POST path="/gettext" host=detecting-insults.herokuapp.com request_id=8da2d033-aedd-4a8a-aa08-75612a9cbe0a fwd="195.132.195.26" dyno=web.1 connect=0ms service=2ms status=500 bytes=456 protocol=http
+2017-09-06T08:17:08.322549+00:00 heroku[router]: at=info method=GET path="/index" host=detecting-insults.herokuapp.com request_id=3d5844ca-5a1c-40f6-ad56-101a7d0d3f63 fwd="79.54.138.127" dyno=web.1 connect=1ms service=3ms status=200 bytes=769 protocol=http
+2017-09-06T08:17:08.491261+00:00 heroku[router]: at=info method=GET path="/static/style_lulu.css" host=detecting-insults.herokuapp.com request_id=2a5edb74-f346-40ce-b3bb-448b2820d0de fwd="79.54.138.127" dyno=web.1 connect=1ms service=12ms status=200 bytes=1268 protocol=http
+2017-09-06T08:17:08.623779+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=detecting-insults.herokuapp.com request_id=e9d74728-33ee-4093-96b1-a8825997e558 fwd="79.54.138.127" dyno=web.1 connect=1ms service=3ms status=404 bytes=386 protocol=http
+2017-09-06T08:17:16.121556+00:00 heroku[router]: at=info method=POST path="/gettext" host=detecting-insults.herokuapp.com request_id=13e4251c-f336-4329-b0e1-ff118bf43f7d fwd="79.54.138.127" dyno=web.1 connect=1ms service=3ms status=500 bytes=456 protocol=http
+2017-09-06T08:26:49.369248+00:00 heroku[router]: at=info method=GET path="/index" host=detecting-insults.herokuapp.com request_id=5c0165e4-dea1-4b9a-91ff-cec92feb8347 fwd="10.6.78.30,91.218.226.5" dyno=web.1 connect=0ms service=1ms status=200 bytes=769 protocol=http
+2017-09-06T08:26:49.565807+00:00 heroku[router]: at=info method=GET path="/static/style_lulu.css" host=detecting-insults.herokuapp.com request_id=af3fa278-79c8-4d2e-a605-37febff07f4f fwd="10.6.78.30,91.218.226.5" dyno=web.1 connect=0ms service=8ms status=200 bytes=1268 protocol=http
+2017-09-06T08:26:49.823441+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=detecting-insults.herokuapp.com request_id=d144ae0b-4ba0-42fa-9319-48ee3d91759d fwd="10.6.78.30,91.218.226.5" dyno=web.1 connect=2ms service=2ms status=404 bytes=386 protocol=http
+2017-09-06T08:27:02.306864+00:00 heroku[router]: at=info method=POST path="/gettext" host=detecting-insults.herokuapp.com request_id=a9e0b4b0-7136-44f0-b638-24eff0944fee fwd="10.6.78.30,91.218.226.5" dyno=web.1 connect=0ms service=3ms status=500 bytes=456 protocol=http
+2017-09-06T09:01:48.049960+00:00 heroku[web.1]: Idling
+2017-09-06T09:01:48.050429+00:00 heroku[web.1]: State changed from up to down
+2017-09-06T09:01:48.890999+00:00 app[web.1]: [2017-09-06 09:01:48 +0000] [10] [INFO] Worker exiting (pid: 10)
+2017-09-06T09:01:48.891010+00:00 app[web.1]: [2017-09-06 09:01:48 +0000] [11] [INFO] Worker exiting (pid: 11)
+2017-09-06T09:01:48.901050+00:00 app[web.1]: [2017-09-06 09:01:48 +0000] [4] [INFO] Handling signal: term
+2017-09-06T09:01:48.923316+00:00 app[web.1]: [2017-09-06 09:01:48 +0000] [4] [INFO] Shutting down: Master
+2017-09-06T09:01:48.876633+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2017-09-06T09:01:49.055560+00:00 heroku[web.1]: Process exited with status 0
+2017-09-06T09:13:40.152155+00:00 heroku[web.1]: Unidling
+2017-09-06T09:13:40.152553+00:00 heroku[web.1]: State changed from down to starting
+2017-09-06T09:13:47.619631+00:00 heroku[web.1]: Starting process with command `gunicorn app:app`
+2017-09-06T09:13:50.873385+00:00 app[web.1]: [2017-09-06 09:13:50 +0000] [4] [INFO] Starting gunicorn 19.3.0
+2017-09-06T09:13:50.874024+00:00 app[web.1]: [2017-09-06 09:13:50 +0000] [4] [INFO] Listening at: http://0.0.0.0:33993 (4)
+2017-09-06T09:13:50.874172+00:00 app[web.1]: [2017-09-06 09:13:50 +0000] [4] [INFO] Using worker: sync
+2017-09-06T09:13:50.878634+00:00 app[web.1]: [2017-09-06 09:13:50 +0000] [10] [INFO] Booting worker with pid: 10
+2017-09-06T09:13:50.903097+00:00 app[web.1]: [2017-09-06 09:13:50 +0000] [11] [INFO] Booting worker with pid: 11
+2017-09-06T09:13:51.501563+00:00 heroku[web.1]: State changed from starting to up
+2017-09-06T09:13:53.676572+00:00 heroku[router]: at=info method=GET path="/" host=detecting-insults.herokuapp.com request_id=7df623cb-8d41-46a7-8da6-900b1470c1eb fwd="195.132.195.26" dyno=web.1 connect=0ms service=1468ms status=302 bytes=439 protocol=https
+2017-09-06T09:13:53.962942+00:00 heroku[router]: at=info method=GET path="/index" host=detecting-insults.herokuapp.com request_id=40d64b41-243c-497f-b1b5-0f7936f140b5 fwd="195.132.195.26" dyno=web.1 connect=1ms service=18ms status=200 bytes=769 protocol=http
+2017-09-06T09:13:54.114405+00:00 heroku[router]: at=info method=GET path="/static/style_lulu.css" host=detecting-insults.herokuapp.com request_id=76dbdfa2-dc80-4a28-865b-7747e4e86e96 fwd="195.132.195.26" dyno=web.1 connect=1ms service=18ms status=200 bytes=1268 protocol=http
+2017-09-06T09:13:54.458479+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=detecting-insults.herokuapp.com request_id=7025916b-e4c4-49dc-bb95-7bba2aebda77 fwd="195.132.195.26" dyno=web.1 connect=1ms service=27ms status=404 bytes=386 protocol=http
+2017-09-06T09:14:11.601143+00:00 heroku[router]: at=info method=POST path="/gettext" host=detecting-insults.herokuapp.com request_id=763a9296-5dfa-4fc9-8179-595915f5ec9e fwd="195.132.195.26" dyno=web.1 connect=0ms service=8ms status=500 bytes=456 protocol=http
+2017-09-06T09:27:32.792061+00:00 heroku[router]: at=info method=GET path="/" host=detecting-insults.herokuapp.com request_id=aea88167-d981-4283-a1f1-0a24309bdf7c fwd="195.132.195.26" dyno=web.1 connect=1ms service=8ms status=302 bytes=439 protocol=https
+2017-09-06T09:27:32.985246+00:00 heroku[router]: at=info method=GET path="/index" host=detecting-insults.herokuapp.com request_id=7e3dc136-92d3-4170-a244-896b0b728763 fwd="195.132.195.26" dyno=web.1 connect=1ms service=8ms status=200 bytes=769 protocol=http
+2017-09-06T09:27:41.917499+00:00 heroku[router]: at=info method=POST path="/gettext" host=detecting-insults.herokuapp.com request_id=e22f77f5-79c5-4ccf-8c8c-ec23f1503a70 fwd="195.132.195.26" dyno=web.1 connect=1ms service=5ms status=500 bytes=456 protocol=http
+2017-09-06T09:30:41.468360+00:00 heroku[router]: at=info method=GET path="/" host=detecting-insults.herokuapp.com request_id=be8b223d-8181-487a-928a-811e64376656 fwd="195.132.195.26" dyno=web.1 connect=1ms service=4ms status=302 bytes=439 protocol=https
+2017-09-06T09:30:41.575727+00:00 heroku[router]: at=info method=GET path="/index" host=detecting-insults.herokuapp.com request_id=63977c7e-53fe-4e8f-9399-33d2ab4342fb fwd="195.132.195.26" dyno=web.1 connect=3ms service=4ms status=200 bytes=769 protocol=http
+2017-09-06T09:31:13.961459+00:00 heroku[router]: at=info method=POST path="/gettext" host=detecting-insults.herokuapp.com request_id=bbbd9840-7c1e-47d6-bff2-bab1b20daef4 fwd="195.132.195.26" dyno=web.1 connect=3ms service=15ms status=500 bytes=456 protocol=http
+2017-09-06T09:35:19.535789+00:00 heroku[router]: at=info method=GET path="/index" host=detecting-insults.herokuapp.com request_id=603b6b8f-1479-47e9-a970-99b5386eb913 fwd="79.54.138.127" dyno=web.1 connect=0ms service=2ms status=200 bytes=769 protocol=http
+2017-09-06T09:35:35.554454+00:00 heroku[router]: at=info method=POST path="/gettext" host=detecting-insults.herokuapp.com request_id=96f948cb-f37d-4a7f-ba30-7404b025212d fwd="79.54.138.127" dyno=web.1 connect=0ms service=4ms status=500 bytes=456 protocol=http
+2017-09-06T09:48:46.529297+00:00 heroku[router]: at=info method=GET path="/index" host=detecting-insults.herokuapp.com request_id=b61cd9f2-fce9-4b8e-945f-7555068cf157 fwd="10.6.78.30,91.218.226.5" dyno=web.1 connect=0ms service=1ms status=200 bytes=769 protocol=http
+2017-09-06T09:48:54.044807+00:00 heroku[router]: at=info method=POST path="/gettext" host=detecting-insults.herokuapp.com request_id=b45bfa32-c81b-4a3d-9ae7-671b2f456631 fwd="10.6.78.30,91.218.226.5" dyno=web.1 connect=0ms service=3ms status=500 bytes=456 protocol=http
+2017-09-06T10:00:37.765395+00:00 heroku[router]: at=info method=GET path="/index" host=detecting-insults.herokuapp.com request_id=aaf203d1-4b3e-4467-9280-df6552322b52 fwd="91.218.224.5" dyno=web.1 connect=0ms service=7ms status=200 bytes=769 protocol=http
+2017-09-06T10:00:37.906894+00:00 heroku[router]: at=info method=GET path="/index" host=detecting-insults.herokuapp.com request_id=9932d279-a535-4935-96f3-8ea639d3fd87 fwd="199.19.249.196" dyno=web.1 connect=1ms service=5ms status=200 bytes=769 protocol=http
+2017-09-06T10:00:51.964019+00:00 heroku[router]: at=info method=POST path="/gettext" host=detecting-insults.herokuapp.com request_id=61796375-bf0f-4f62-ad61-f0121b7e039d fwd="91.218.224.5" dyno=web.1 connect=0ms service=3ms status=500 bytes=456 protocol=http
+2017-09-06T10:00:52.527463+00:00 heroku[router]: at=info method=GET path="/gettext" host=detecting-insults.herokuapp.com request_id=eba922c2-aacd-4b30-9588-b937bcf940cc fwd="199.19.249.196" dyno=web.1 connect=1ms service=3ms status=405 bytes=362 protocol=http
+2017-09-06T10:05:25.957779+00:00 heroku[router]: at=info method=GET path="/index" host=detecting-insults.herokuapp.com request_id=d5d819cd-811c-4ef5-aadc-28b9824b6ed2 fwd="10.6.78.30,91.218.226.5" dyno=web.1 connect=2ms service=14ms status=200 bytes=769 protocol=http
+2017-09-06T10:05:30.587054+00:00 heroku[router]: at=info method=POST path="/gettext" host=detecting-insults.herokuapp.com request_id=25c703ca-3acd-4750-859e-5a6c291e3ead fwd="10.6.78.30,91.218.226.5" dyno=web.1 connect=5ms service=31ms status=500 bytes=456 protocol=http
+2017-09-06T10:07:22.889203+00:00 heroku[router]: at=info method=GET path="/" host=detecting-insults.herokuapp.com request_id=4ae15320-129d-4648-a4a5-3c3d72c59672 fwd="195.132.195.26" dyno=web.1 connect=3ms service=6ms status=302 bytes=439 protocol=https
+2017-09-06T10:07:22.991899+00:00 heroku[router]: at=info method=GET path="/index" host=detecting-insults.herokuapp.com request_id=1927c595-9565-4aad-bd3d-6074d9d208a6 fwd="195.132.195.26" dyno=web.1 connect=3ms service=5ms status=200 bytes=769 protocol=http
+2017-09-06T10:08:24.216540+00:00 heroku[router]: at=info method=POST path="/gettext" host=detecting-insults.herokuapp.com request_id=9c029e12-9753-4121-ac1e-101ebf36c3ad fwd="195.132.195.26" dyno=web.1 connect=7ms service=14ms status=500 bytes=456 protocol=http
+2017-09-06T10:13:08.596602+00:00 heroku[router]: at=info method=POST path="/gettext" host=detecting-insults.herokuapp.com request_id=bf2f6372-cd16-4713-b922-b8c06b96c245 fwd="10.6.78.30,91.218.226.5" dyno=web.1 connect=0ms service=5ms status=500 bytes=456 protocol=http
+2017-09-06T10:15:28.421583+00:00 heroku[router]: at=info method=GET path="/gettext" host=detecting-insults.herokuapp.com request_id=c56ac6de-f4d2-4ad8-819b-457bf9e88568 fwd="10.6.78.30,91.218.226.5" dyno=web.1 connect=1ms service=3ms status=405 bytes=362 protocol=http
+2017-09-06T10:15:35.393687+00:00 heroku[router]: at=info method=GET path="/gettext" host=detecting-insults.herokuapp.com request_id=fd6a9195-6485-4913-b5a9-c8ef8f394299 fwd="10.6.78.30,91.218.226.5" dyno=web.1 connect=1ms service=2ms status=405 bytes=362 protocol=http
+2017-09-06T10:15:41.721935+00:00 heroku[router]: at=info method=GET path="/index" host=detecting-insults.herokuapp.com request_id=fdc9eb1b-c780-426d-93a4-73929f91ee15 fwd="10.6.78.30,91.218.226.5" dyno=web.1 connect=4ms service=6ms status=200 bytes=769 protocol=http
+2017-09-06T10:15:44.882601+00:00 heroku[router]: at=info method=POST path="/gettext" host=detecting-insults.herokuapp.com request_id=615b9897-bf38-4983-83de-bfbd3e3d26f2 fwd="10.6.78.30,91.218.226.5" dyno=web.1 connect=1ms service=8ms status=500 bytes=456 protocol=http

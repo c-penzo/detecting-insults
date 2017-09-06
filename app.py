@@ -174,7 +174,8 @@ def gettext():
         #f.write(text)
         #f.close()
         text = request.form['text']
-	yesno = model(text)[0]
+	#yesno = model(text)[0]
+        yesno = 1
         if yesno==0:
            pred='non insulting!'
         else:
